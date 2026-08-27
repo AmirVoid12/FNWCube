@@ -1,0 +1,81 @@
+# ============[GenCubes]============= #
+options:
+  enhancement:
+    teleport_outside_when_rebuild: true
+    # This option establish the economy that will be used in the sells
+    # you can choose between (ESSENTIALS, SHOPGUIPLUS, AUTOSELL)
+    sells_plugin: "ESSENTIALS"
+  edition:
+    # This will be the time in ticks that takes to paste 1 batch of blocks using the default animation
+    # increase the edition rate if you are experiencing lag from the animation
+    # take in count that increasing the edition rate will make the process of building longer
+    # 20 ticks = 1s
+    block_batch_edit_rate: 1
+  gui:
+    # disabling the gui will cause blocks to drop normally out of the cube inventory
+    enable: true
+    # Change the color of the glasses in the cube inventory
+    # (Material damage based)
+    inventory_color: 7
+  actions:
+    # Enable or disable the cube removing doing shift plus right click on the cube border
+    shift_right_click_cube_remove: true
+    # Disabling this option players will not receive cubes back when removing
+    get_cube_back_when_removing: true
+    # Enabling this option the players will have to clear out the cube inventory before removing it
+    onremove_wait_for_empty_cube_inventory: false
+    # Show a confirmation before selling a cube
+    onsell_confirmation: false
+  fastasyncworldedit:
+    # Enabling this option can make the process of building a cube longer
+    # It is recommendable to keep this option as false when using FAWE
+    show_block_animation_on_building: false
+    # Enabling this option can make the process of building a cube longer
+    # It is recommendable to keep this option as false when using FAWE
+    show_block_animation_on_regeneration: false
+  autosell:
+    # The default shop that will be used for items worth
+    default_shop: "Shop1"
+  superiorskyblock2:
+    # Allow island members to open the owner's gencubes
+    access_for_island_members: true
+    # Allow island members to break blocks
+    allow_members_to_break_blocks: true
+    # Enabling this option will prevent players to leave or delete islands without taking
+    # back their cubes first
+    protect_island_cubes: false
+    # Allow island owners to break members cubes
+    allow_owner_to_break_members_cubes: true
+  iridiumskyblock:
+    # Allow island members to open the owner's gencubes
+    access_for_island_members: true
+    # Allow island members to break blocks
+    allow_members_to_break_blocks: true
+    # Enabling this option will prevent players to leave or delete islands without taking
+    # back their cubes first
+    protect_island_cubes: false
+    # Allow island owners to break members cubes
+    allow_owner_to_break_members_cubes: true
+  bentobox:
+    # Allow island members to open the owner's gencubes
+    access_for_island_members: true
+    # Allow island members to break blocks
+    allow_members_to_break_blocks: true
+    # Enabling this option will prevent players to leave or delete islands without taking
+    # back their cubes first
+    protect_island_cubes: false
+    # Allow island owners to break members cubes
+    allow_owner_to_break_members_cubes: true
+  fabledskyblock:
+    # Allow island members to open the owner's gencubes
+    access_for_island_members: true
+    # Allow island members to break blocks
+    allow_members_to_break_blocks: true
+    # Enabling this option will prevent players to leave or delete islands without taking
+    # back their cubes first
+    protect_island_cubes: false
+    # Allow island owners to break members cubes
+    allow_owner_to_break_members_cubes: true
+disabled-worlds:
+  - "example_world1"
+  - "example_world2"

@@ -1,0 +1,79 @@
+plugins {
+    id 'java'
+    id 'com.gradleup.shadow' version '9.0.0'
+}
+
+group = 'iran.flame.network.cube'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://hub.spigotmc.org/nexus/content/groups/public/'
+        content {
+            includeGroup 'org.bukkit'
+            includeGroup 'org.spigotmc'
+        }
+    }
+    maven { url = 'https://jitpack.io' }
+    maven { url = 'https://libraries.minecraft.net/' }
+    maven { url = 'https://repo.essentialsx.net/releases/' }
+    maven { url = 'https://maven.enginehub.org/repo/' }
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url = 'https://raw.githubusercontent.com/TeamVK/maven-repository/master/release/' }
+}
+
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.20.2-R0.1-SNAPSHOT'
+    compileOnly 'com.github.MilkBowl:VaultAPI:1.7'
+    compileOnly 'com.mojang:authlib:1.5.21'
+    compileOnly "net.essentialsx:EssentialsX:2.20.1"
+
+    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:2.15.0")
+    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit:2.15.0") {
+        transitive = false
+    }
+
+    compileOnly 'com.github.brcdev-minecraft:shopgui-api:3.2.0'
+    compileOnly 'me.clip.autosell:AutoSellAPI:1.9.3'
+
+    implementation("com.github.cryptomorin:XSeries:13.4.0")
+    implementation 'org.jetbrains:annotations:24.1.0'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.shadowJar {
+    archiveClassifier = ''
+}
+
+tasks.build {
+    dependsOn tasks.shadowJar
+}
+
+tasks.processResources {
+    def props = [version: version]
+    inputs.properties(props)
+    filteringCharset = 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand(props)
+    }
+}

@@ -1,0 +1,535 @@
+gencubes:
+  Coal:
+    # The size should be an odd number
+    # Please be careful with this option if you want to make gigantic cubes
+    # Its recommendable to use FastAsyncWorldEdit to prevent any kind of
+    size: 5 #[11x11x11]
+    border:
+      material: BEDROCK
+      data: 0
+    remove-price: 0
+    regeneration:
+      # Regeneration time [Ticks]
+      # 20 Ticks -> 1s
+      # 1200 Ticks -> 1m
+      timing: 2400
+      quantity:
+        # Refers to the type of quantity that will be used for the regeneration
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    generation:
+      # You can add and remove all the blocks you need
+      STONE:
+        percentage: 25
+      GOLD_ORE:
+        percentage: 30
+      DIAMOND_ORE:
+        percentage: 15
+      IRON_BLOCK:
+        percentage: 10
+      GOLD_BLOCK:
+        percentage: 20
+      DIAMOND_BLOCK:
+        percentage: 10
+      EMERALD_BLOCK:
+        percentage: 10
+      EMERALD_ORE:
+        percentage: 10
+    inventory:
+      name: "&7&lMineCube &7(5x5x5)"
+      # You can choose between NORMAL or INFINITE
+      type: "NORMAL"
+    upgrades:
+      enable: false
+      # The next upgrade must have the same cube size
+      next-upgrade: "example2"
+      price: 1000
+    build:
+      quantity:
+        # Refers to the type of quantity that will be used for the cube building
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube building
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    rebuild:
+      # Enable or disable the rebuild button
+      enable: true
+      # Requires Vault
+      price: 1000
+      quantity:
+        # Refers to the type of quantity that will be used for the cube rebuilding
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    smelt:
+      # Enable or disable the smelt button
+      enable: true
+      # Requires Vault
+      price: 1000
+    sells:
+      # Enable or disable the sell button
+      enable: false
+    inventory-linking:
+      # Enable or disable the inventory linking option
+      enable: true
+    compressor:
+      # Enable or disable the compressor
+      enable: true
+      # Requires Vault
+      price: 0
+    autominer:
+      # Enable or disable the autominer
+      enable: false
+      # Time between each automatic mining action [Ticks]
+      # 20 Ticks -> 1s
+      timing: 30
+    item:
+      material: PLAYER_HEAD
+      # Valid when the material is a skull
+      head: "761c57974f102d3deb3c53d42fde909e9b39ccbc7f776e277575a02d51a1999e"
+      name: "&7&lMineCube &7(5x5x5)"
+      lore:
+        - "&7This cube has a size"
+        - "&7of &8(&f5&7x&f5&7x&f5&8)"
+        - ""
+        - "&9&lLeft Click &7to see a preview"
+        - "&f&lRight Click &7to place the cube"
+  Iron:
+    # The size should be an odd number
+    # Please be careful with this option if you want to make gigantic cubes
+    # Its recommendable to use FastAsyncWorldEdit to prevent any kind of
+    size: 9 #[11x11x11]
+    border:
+      material: BEDROCK
+      data: 0
+    remove-price: 0
+    regeneration:
+      # Regeneration time [Ticks]
+      # 20 Ticks -> 1s
+      # 1200 Ticks -> 1m
+      timing: 2400
+      quantity:
+        # Refers to the type of quantity that will be used for the regeneration
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    generation:
+      # You can add and remove all the blocks you need
+      STONE:
+        percentage: 25
+      GOLD_ORE:
+        percentage: 30
+      DIAMOND_ORE:
+        percentage: 15
+      IRON_BLOCK:
+        percentage: 10
+      GOLD_BLOCK:
+        percentage: 20
+      DIAMOND_BLOCK:
+        percentage: 10
+      EMERALD_BLOCK:
+        percentage: 10
+      EMERALD_ORE:
+        percentage: 10
+    inventory:
+      name: "&f&lMineCube &7(8x8x8)"
+      # You can choose between NORMAL or INFINITE
+      type: "NORMAL"
+    upgrades:
+      enable: false
+      # The next upgrade must have the same cube size
+      next-upgrade: "example2"
+      price: 1000
+    build:
+      quantity:
+        # Refers to the type of quantity that will be used for the cube building
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube building
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    rebuild:
+      # Enable or disable the rebuild button
+      enable: true
+      # Requires Vault
+      price: 1000
+      quantity:
+        # Refers to the type of quantity that will be used for the cube rebuilding
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    smelt:
+      # Enable or disable the smelt button
+      enable: true
+      # Requires Vault
+      price: 1000
+    sells:
+      # Enable or disable the sell button
+      enable: false
+    inventory-linking:
+      # Enable or disable the inventory linking option
+      enable: true
+    compressor:
+      # Enable or disable the compressor
+      enable: true
+      # Requires Vault
+      price: 0
+    autominer:
+      # Enable or disable the autominer
+      enable: false
+      # Time between each automatic mining action [Ticks]
+      # 20 Ticks -> 1s
+      timing: 30
+    item:
+      material: PLAYER_HEAD
+      # Valid when the material is a skull
+      head: "1ba16c3890af39c3f2d576586cff443de07dad32b2315e2ff6f0d5d6a3c663dd"
+      name: "&f&lMineCube &7(8x8x8)"
+      lore:
+        - "&7This cube has a size"
+        - "&7of &8(&f8&7x&f8&7x&f8&8)"
+        - ""
+        - "&9&lLeft Click &7to see a preview"
+        - "&f&lRight Click &7to place the cube"
+  Gold:
+    # The size should be an odd number
+    # Please be careful with this option if you want to make gigantic cubes
+    # Its recommendable to use FastAsyncWorldEdit to prevent any kind of
+    size: 11 #[11x11x11]
+    border:
+      material: BEDROCK
+      data: 0
+    remove-price: 0
+    regeneration:
+      # Regeneration time [Ticks]
+      # 20 Ticks -> 1s
+      # 1200 Ticks -> 1m
+      timing: 2400
+      quantity:
+        # Refers to the type of quantity that will be used for the regeneration
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    generation:
+      # You can add and remove all the blocks you need
+      STONE:
+        percentage: 25
+      GOLD_ORE:
+        percentage: 30
+      DIAMOND_ORE:
+        percentage: 15
+      IRON_BLOCK:
+        percentage: 10
+      GOLD_BLOCK:
+        percentage: 20
+      DIAMOND_BLOCK:
+        percentage: 10
+      EMERALD_BLOCK:
+        percentage: 10
+      EMERALD_ORE:
+        percentage: 10
+    inventory:
+      name: "&e&lMineCube &7(11x11x11)"
+      # You can choose between NORMAL or INFINITE
+      type: "INFINITE"
+    upgrades:
+      enable: false
+      # The next upgrade must have the same cube size
+      next-upgrade: "example2"
+      price: 1000
+    build:
+      quantity:
+        # Refers to the type of quantity that will be used for the cube building
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube building
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    rebuild:
+      # Enable or disable the rebuild button
+      enable: true
+      # Requires Vault
+      price: 1000
+      quantity:
+        # Refers to the type of quantity that will be used for the cube rebuilding
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    smelt:
+      # Enable or disable the smelt button
+      enable: true
+      # Requires Vault
+      price: 1000
+    sells:
+      # Enable or disable the sell button
+      enable: false
+    inventory-linking:
+      # Enable or disable the inventory linking option
+      enable: true
+    compressor:
+      # Enable or disable the compressor
+      enable: true
+      # Requires Vault
+      price: 0
+    autominer:
+      # Enable or disable the autominer
+      enable: false
+      # Time between each automatic mining action [Ticks]
+      # 20 Ticks -> 1s
+      timing: 30
+    item:
+      material: PLAYER_HEAD
+      # Valid when the material is a skull
+      head: "73bc965d579c3c6039f0a17eb7c2e6faf538c7a5de8e60ec7a719360d0a857a9"
+      name: "&6&lMineCube &7(11x11x11)"
+      lore:
+        - "&7This cube has a size"
+        - "&7of &8(&f11&7x&f11&7x&f11&8)"
+        - ""
+        - "&9&lLeft Click &7to see a preview"
+        - "&f&lRight Click &7to place the cube"
+  Diamond:
+    # The size should be an odd number
+    # Please be careful with this option if you want to make gigantic cubes
+    # Its recommendable to use FastAsyncWorldEdit to prevent any kind of
+    size: 15 #[11x11x11]
+    border:
+      material: BEDROCK
+      data: 0
+    remove-price: 0
+    regeneration:
+      # Regeneration time [Ticks]
+      # 20 Ticks -> 1s
+      # 1200 Ticks -> 1m
+      timing: 2400
+      quantity:
+        # Refers to the type of quantity that will be used for the regeneration
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    generation:
+      STONE:
+        percentage: 25
+      GOLD_ORE:
+        percentage: 30
+      DIAMOND_ORE:
+        percentage: 15
+      IRON_BLOCK:
+        percentage: 10
+      GOLD_BLOCK:
+        percentage: 20
+      DIAMOND_BLOCK:
+        percentage: 10
+      EMERALD_BLOCK:
+        percentage: 10
+      EMERALD_ORE:
+        percentage: 10
+    inventory:
+      name: "&b&lMineCube &7(15x15x15)"
+      # You can choose between NORMAL or INFINITE
+      type: "NORMAL"
+    upgrades:
+      enable: false
+      # The next upgrade must have the same cube size
+      next-upgrade: "example2"
+      price: 1000
+    build:
+      quantity:
+        # Refers to the type of quantity that will be used for the cube building
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube building
+      # You can choose between LINEAL and RANDOM
+      type: LINEAL
+    rebuild:
+      # Enable or disable the rebuild button
+      enable: true
+      # Requires Vault
+      price: 1000
+      quantity:
+        # Refers to the type of quantity that will be used for the cube rebuilding
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    smelt:
+      # Enable or disable the smelt button
+      enable: true
+      # Requires Vault
+      price: 1000
+    sells:
+      # Enable or disable the sell button
+      enable: true
+    inventory-linking:
+      # Enable or disable the inventory linking option
+      enable: true
+    compressor:
+      # Enable or disable the compressor
+      enable: true
+      # Requires Vault
+      price: 0
+    autominer:
+      # Enable or disable the autominer
+      enable: false
+      # Time between each automatic mining action [Ticks]
+      # 20 Ticks -> 1s
+      timing: 30
+    item:
+      material: PLAYER_HEAD
+      # Valid when the material is a skull
+      head: "11ed9abf51fe4ea84cfcb27297f1bc54cd382edf85e7bd6e75ecca2b806611"
+      name: "&b&lMineCube &7(15x15x15)"
+      lore:
+        - "&7This cube has a size"
+        - "&7of &8(&f15&7x&f15&7x&f15&8)"
+        - ""
+        - "&9&lLeft Click &7to see a preview"
+        - "&f&lRight Click &7to place the cube"
+  Emerald:
+    # The size should be an odd number
+    # Please be careful with this option if you want to make gigantic cubes
+    # Its recommendable to use FastAsyncWorldEdit to prevent any kind of
+    size: 31 #[30x30x30]
+    border:
+      material: BEDROCK
+      data: 0
+    remove-price: 0
+    regeneration:
+      # Regeneration time [Ticks]
+      # 20 Ticks -> 1s
+      # 1200 Ticks -> 1m
+      timing: 2400
+      quantity:
+        # Refers to the type of quantity that will be used for the regeneration
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: RANDOM
+    generation:
+      # You can add and remove all the blocks you need
+      STONE:
+        percentage: 25
+      GOLD_ORE:
+        percentage: 30
+      DIAMOND_ORE:
+        percentage: 15
+      IRON_BLOCK:
+        percentage: 10
+      GOLD_BLOCK:
+        percentage: 20
+      DIAMOND_BLOCK:
+        percentage: 10
+      EMERALD_BLOCK:
+        percentage: 10
+      EMERALD_ORE:
+        percentage: 10
+    inventory:
+      name: "&c&lMineCube &7(30x30x30)"
+      # You can choose between NORMAL or INFINITE
+      type: "INFINITE"
+    upgrades:
+      # No upgrade for this cube
+      enable: false
+      next-upgrade: ""
+      price: 0
+    build:
+      quantity:
+        # Refers to the type of quantity that will be used for the cube building
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube building
+      # You can choose between LINEAL and RANDOM
+      type: LINEAL
+    rebuild:
+      # Enable or disable the rebuild button
+      enable: true
+      # Requires Vault
+      price: 1000
+      quantity:
+        # Refers to the type of quantity that will be used for the cube rebuilding
+        # You can choose between PERCENTAGE(percentage of blocks) or BLOCKS(number of blocks)
+        type: PERCENTAGE
+        # The value of the quantity
+        value: 100
+      # Refers to the type of cube rebuilding
+      # You can choose between LINEAL and RANDOM
+      type: LINEAL
+    smelt:
+      # Enable or disable the smelt button
+      enable: true
+      # Requires Vault
+      price: 500
+    sells:
+      # Enable or disable the sell button
+      enable: true
+    inventory-linking:
+      # Enable or disable the inventory linking option
+      enable: true
+    compressor:
+      # Enable or disable the compressor
+      enable: true
+      # Requires Vault
+      price: 0
+    autominer:
+      # Enable or disable the autominer
+      enable: true
+      # Time between each automatic mining action [Ticks]
+      # 20 Ticks -> 1s
+      timing: 30
+    item:
+      material: PLAYER_HEAD
+      # Valid when the material is a skull
+      head: "4053851527c4c9ef30a61fb067ebce957c726e1687f8b530fb4a6beeba438bd"
+      name: "&c&lMineCube &7(30x30x30)"
+      lore:
+        - "&7This cube has a size"
+        - "&7of &8(&f30&7x&f30&7x&f30&8)"
+        - ""
+        - "&9&lLeft Click &7to see a preview"
+        - "&f&lRight Click &7to place the cube"
